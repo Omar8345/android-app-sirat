@@ -104,7 +104,8 @@ class TranslationMode extends StatelessWidget {
           DropdownButtonHideUnderline(
             child: BlocBuilder<QuranThemeBloc, QuranThemeState>(
               builder: (context, state) {
-                return DropdownButton(
+                return DropdownButton<dynamic>(
+                  onChanged: (val) {},
                   items: List.generate(
                     1,
                     (index) => DropdownMenuItem(
@@ -245,7 +246,8 @@ class QuranFontFamily extends StatelessWidget {
           DropdownButtonHideUnderline(
             child: BlocBuilder<QuranThemeBloc, QuranThemeState>(
               builder: (context, state) {
-                return DropdownButton(
+                return DropdownButton<dynamic>(
+                  onChanged: (val) {},
                   items: List.generate(
                     1,
                     (index) => DropdownMenuItem(
@@ -355,7 +357,8 @@ class TranslationFontFamily extends StatelessWidget {
           DropdownButtonHideUnderline(
             child: BlocBuilder<QuranThemeBloc, QuranThemeState>(
               builder: (context, state) {
-                return DropdownButton(
+                return DropdownButton<dynamic>(
+                  onChanged: (val) {},
                   items: List.generate(
                     1,
                     (index) => DropdownMenuItem(
